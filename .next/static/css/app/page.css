@@ -1,0 +1,201 @@
+/*!****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./src/components/cardProject/index.style.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************/
+.project-card {
+    display: flex;
+    padding: 16px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    align-items: center;
+    gap: 18px;
+    width: 320px;
+    background: #ffffff08;
+    cursor: pointer;
+
+    transition: all 0.4s linear;
+
+    .thumbnail {
+        width: 60px;
+        height: 60px;
+        border-radius: 8px;
+    }
+
+    .section-text-box {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+
+        .h-tt {
+            margin: 0;
+            font-size: 16px;
+            color: #ffffffd8;
+            font-weight: 500;
+        }
+    
+        .p-tt {
+            margin: 0;
+            font-size: 12px;
+            color: #ffffff87;
+            font-weight: 400;
+        }
+    }
+}.project-card:hover {
+    background: #ffffff18;
+}
+
+.list-name {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+
+    .h1 {
+        font-size: 18px;
+        font-weight: 400;
+        margin: 22px 0px 22px 0px;
+        color: #ebebeb;
+    }
+}
+
+.genesis-box {
+    align-items: start;
+    background: #ffffff1c;
+    padding: 14px 0px 14px 0px;
+    border-radius: 100px;
+    box-sizing: border-box;
+    width: 140px;
+    display: flex;
+    justify-content: center;
+
+    .name {
+        font-size: 14px;
+        color: #ebebeb;
+        font-weight: 400;
+    }
+}
+
+.genesis-- {
+    width: 100%;
+}
+
+.portfolio {
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    height: calc(60vh - 34px);
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+/*!*********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./src/app/index.style.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************/
+body {
+    margin: 12px;
+    overflow: hidden;
+    box-sizing: border-box;
+    background: #121212;
+}
+
+.section-1 {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.image-project {
+    border-radius: 12px;
+    width: 100%;
+    height: auto;
+}
+
+.images {
+    height: calc(100vh - 24px);
+    overflow-y: scroll;
+    border-radius: 12px;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.project-images {
+    border-radius: 12px;
+    height: calc(100vh - 24px);
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.portfolio {
+    
+}
+
+@media (max-width: 850px) {
+    .images {
+        display: flex;
+        flex-direction: column;
+        gap: 14px !important;
+        background: #121212;
+    }
+    .section-1 {
+        flex-direction: column;
+    }
+    .project-card {
+        width: 100%;
+    }
+    .portfolio {
+        width: 100%;
+        .project-card {
+            width: 100%;
+        }
+    }
+    .project-images {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        margin: 12px 12px 12px 12px;
+        gap: 14px;
+        display: flex;
+        flex-direction: column;
+        background: #121212;
+    }
+    .images {
+        height: calc(100vh - 34px);
+    }
+    .fechar-button {
+        display: flex !important;
+    }
+}
+
+@keyframes slideIn {
+    from {
+      transform: translateY(2000px); /* Inicia 20px abaixo do ponto normal */
+    }
+    to {
+      transform: translateY(0); /* Termina no ponto normal */
+    }
+  }
+  
+  .project-images {
+    animation: slideIn 0.8s linear; 
+  }
+
+
+.fechar-button {
+    align-items: start;
+    background: #ffffff1c;
+    padding: 14px 0px 14px 0px;
+    border-radius: 100px;
+    box-sizing: border-box;
+    width: 100%;
+    display: none;
+    justify-content: center;
+
+        font-size: 14px;
+        color: #ebebeb;
+        font-weight: 400;
+}

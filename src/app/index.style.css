@@ -1,0 +1,108 @@
+body {
+    margin: 12px;
+    overflow: hidden;
+    box-sizing: border-box;
+    background: #121212;
+}
+
+.section-1 {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.image-project {
+    border-radius: 12px;
+    width: 100%;
+    height: auto;
+}
+
+.images {
+    height: calc(100vh - 24px);
+    overflow-y: scroll;
+    border-radius: 12px;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.project-images {
+    border-radius: 12px;
+    height: calc(100vh - 24px);
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.portfolio {
+    
+}
+
+@media (max-width: 850px) {
+    .images {
+        display: flex;
+        flex-direction: column;
+        gap: 14px !important;
+        background: #121212;
+    }
+    .section-1 {
+        flex-direction: column;
+    }
+    .project-card {
+        width: 100%;
+    }
+    .portfolio {
+        width: 100%;
+        .project-card {
+            width: 100%;
+        }
+    }
+    .project-images {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        margin: 12px 12px 12px 12px;
+        gap: 14px;
+        display: flex;
+        flex-direction: column;
+        background: #121212;
+    }
+    .images {
+        height: calc(100vh - 34px);
+    }
+    .fechar-button {
+        display: flex !important;
+    }
+}
+
+@keyframes slideIn {
+    from {
+      transform: translateY(2000px); /* Inicia 20px abaixo do ponto normal */
+    }
+    to {
+      transform: translateY(0); /* Termina no ponto normal */
+    }
+  }
+  
+  .project-images {
+    animation: slideIn 0.8s linear; 
+  }
+
+
+.fechar-button {
+    align-items: start;
+    background: #ffffff1c;
+    padding: 14px 0px 14px 0px;
+    border-radius: 100px;
+    box-sizing: border-box;
+    width: 100%;
+    display: none;
+    justify-content: center;
+
+        font-size: 14px;
+        color: #ebebeb;
+        font-weight: 400;
+}

@@ -1,0 +1,87 @@
+.project-card {
+    display: flex;
+    padding: 16px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    align-items: center;
+    gap: 18px;
+    width: 320px;
+    background: #ffffff08;
+    cursor: pointer;
+
+    transition: all 0.4s linear;
+
+    .thumbnail {
+        width: 60px;
+        height: 60px;
+        border-radius: 8px;
+    }
+
+    .section-text-box {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+
+        .h-tt {
+            margin: 0;
+            font-size: 16px;
+            color: #ffffffd8;
+            font-weight: 500;
+        }
+    
+        .p-tt {
+            margin: 0;
+            font-size: 12px;
+            color: #ffffff87;
+            font-weight: 400;
+        }
+    }
+}.project-card:hover {
+    background: #ffffff18;
+}
+
+.list-name {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+
+    .h1 {
+        font-size: 18px;
+        font-weight: 400;
+        margin: 22px 0px 22px 0px;
+        color: #ebebeb;
+    }
+}
+
+.genesis-box {
+    align-items: start;
+    background: #ffffff1c;
+    padding: 14px 0px 14px 0px;
+    border-radius: 100px;
+    box-sizing: border-box;
+    width: 140px;
+    display: flex;
+    justify-content: center;
+
+    .name {
+        font-size: 14px;
+        color: #ebebeb;
+        font-weight: 400;
+    }
+}
+
+.genesis-- {
+    width: 100%;
+}
+
+.portfolio {
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    height: calc(60vh - 34px);
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
