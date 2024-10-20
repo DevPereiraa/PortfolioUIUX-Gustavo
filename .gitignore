@@ -1,1 +1,3 @@
 node_modules
+# Ignorar arquivos do Next.js
+.next/

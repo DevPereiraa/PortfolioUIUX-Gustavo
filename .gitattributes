@@ -1,2 +1,11 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Força LF (line feed) para todos os arquivos de texto
+* text=auto
+
+# Mantém LF para arquivos CSS, JavaScript e TypeScript
+*.css text eol=lf
+*.js text eol=lf
+*.ts text eol=lf
+

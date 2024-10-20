@@ -39,9 +39,23 @@ const Portfolio: React.FC = () => {
   const selectedProjectData = projects.find(project => project.id === selectedProject);
 
   return (
+
     <div className='section-1'>
       <div className='list-name'>
-        <div className='genesis--'><div className='genesis-box'><span className='name'>Gustavo Pereira</span></div></div>
+        <div className='genesis--'>
+          <div className='genesis-box'>
+            <span className='name'>Gustavo Pereira</span>
+          </div>
+        </div>
+
+        <div className='genesis--'>
+          <div className='genesis-box'>
+            <a href="https://www.linkedin.com/in/gustavopereira-dev/" target="_blank" rel="noopener noreferrer">
+              <span className='name'>Linkedin</span>
+            </a>
+          </div>
+        </div>
+
         <h1 className='h1'>Projects - Gustavo Pereira</h1>
         <div className="project-card">
           <div className="section-text-box">
