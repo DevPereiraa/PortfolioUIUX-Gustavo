@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Portfólio | Gustavo Pereira",
-  description: "Somos especialistas em criação de logos e branding, oferecendo soluções personalizadas que destacam a essência de cada negócio.",
+  description: "",
 };
 
 export default function RootLayout({
